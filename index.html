@@ -13,87 +13,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Calcolatrice</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      background: #f0f0f0;
-    }
-
-    .calculator {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      margin-top: 50px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    input {
-      width: 200px;
-      height: 40px;
-      font-size: 20px;
-      text-align: right;
-      margin-bottom: 10px;
-    }
-
-    button {
-      width: 45px;
-      height: 45px;
-      font-size: 18px;
-      margin: 3px;
-      cursor: pointer;
-    }
-  </style>
+  <title>Home</title>
 </head>
 
-<body>
+<body style="text-align:center; font-family: Arial;">
 
-<h1>🧮 Calcolatrice</h1>
+  <h1>👋 Ciao!</h1>
+  <p>Benvenuto nel mio sito</p>
 
-<div class="calculator">
-  <input type="text" id="display" disabled><br>
+  <h2>Scegli cosa vuoi fare:</h2>
 
-  <button onclick="add('7')">7</button>
-  <button onclick="add('8')">8</button>
-  <button onclick="add('9')">9</button>
-  <button onclick="add('/')">÷</button><br>
+  <a href="calcolatrice.html">
+    <button>🧮 Vai alla Calcolatrice</button>
+  </a>
 
-  <button onclick="add('4')">4</button>
-  <button onclick="add('5')">5</button>
-  <button onclick="add('6')">6</button>
-  <button onclick="add('*')">×</button><br>
+  <br><br>
 
-  <button onclick="add('1')">1</button>
-  <button onclick="add('2')">2</button>
-  <button onclick="add('3')">3</button>
-  <button onclick="add('-')">−</button><br>
-
-  <button onclick="add('0')">0</button>
-  <button onclick="clearDisplay()">C</button>
-  <button onclick="calculate()">=</button>
-  <button onclick="add('+')">+</button>
-</div>
-
-<script>
-  function add(value) {
-    document.getElementById("display").value += value;
-  }
-
-  function clearDisplay() {
-    document.getElementById("display").value = "";
-  }
-
-  function calculate() {
-    try {
-      document.getElementById("display").value =
-        eval(document.getElementById("display").value);
-    } catch {
-      alert("Errore!");
-    }
-  }
-</script>
+  <a href="dev.html">
+    <button>🚧 Pagina in sviluppo</button>
+  </a>
 
 </body>
 </html>
