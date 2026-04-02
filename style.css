@@ -1,32 +1,80 @@
-
 body {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  background: #f5f5f5;
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a7a);
+  color: white;
+}
+
+/* HOME */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-  margin-top: 40px;
+  font-size: 3rem;
 }
 
-.login-box {
+p {
+  opacity: 0.8;
+}
+
+.main-btn {
   margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #00c6ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  transform: scale(1.1);
+}
+
+/* CALCOLATRICE */
+.calc-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
-  padding: 10px;
-  margin: 5px;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
 }
 
-button {
+.buttons button {
+  margin: 5px;
   padding: 10px 15px;
   border: none;
-  background: black;
-  color: white;
+  border-radius: 8px;
+  background: #00c6ff;
+  color: black;
   cursor: pointer;
 }
 
-button:hover {
-  background: gray;
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
 }
