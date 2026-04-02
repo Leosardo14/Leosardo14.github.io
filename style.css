@@ -1,30 +1,79 @@
-body {
+/* RESET */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #3a3a7a);
-  color: white;
+  padding: 0;
 }
 
-/* HOME */
-.container {
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f0f1f;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #00c6ff;
+}
+
+/* HERO */
+.hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a7a);
+  text-align: center;
+  padding-top: 80px;
 }
 
-h1 {
+.hero h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-p {
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   opacity: 0.8;
 }
 
-.main-btn {
-  margin-top: 20px;
-  padding: 12px 25px;
+.btn-primary {
+  padding: 12px 30px;
   border: none;
   border-radius: 10px;
   background: #00c6ff;
@@ -34,28 +83,31 @@ p {
   transition: 0.3s;
 }
 
-.main-btn:hover {
-  transform: scale(1.1);
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  text-align: center;
 }
 
 /* CALCOLATRICE */
-.calc-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.calc-section {
+  padding: 100px 20px 50px 20px;
+  text-align: center;
 }
 
-input {
-  padding: 12px;
+.calc-box input {
+  padding: 10px;
   margin: 10px;
   border-radius: 8px;
   border: none;
-  width: 200px;
+  width: 150px;
 }
 
-.buttons button {
+.calc-buttons button {
   margin: 5px;
   padding: 10px 15px;
   border: none;
@@ -65,16 +117,33 @@ input {
   cursor: pointer;
 }
 
-.buttons button:hover {
-  transform: scale(1.1);
+.calc-buttons button:hover {
+  transform: scale(1.05);
 }
 
-.back-btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  background: white;
+/* PROGETTI */
+.projects {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a2e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #00c6ff;
   color: black;
-  cursor: pointer;
 }
