@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recensioni</title>
 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Leonardo</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="calcolatrice.html">Calcolatrice</a></li>
+    <li><a href="progetti.html">Progetti</a></li>
+    <li><a href="chi-sono.html">Chi sono</a></li>
+    <li><a href="conosciamoci.html">Conosciamoci</a></li>
+    <li><a href="recensioni.html">Recensioni</a></li>
+  </ul>
+</nav>
+
+<section class="reviews">
+  <h1>Recensioni ⭐</h1>
+
+  <input type="text" id="nome" placeholder="Il tuo nome">
+  <br><br>
+  <textarea id="testo" placeholder="Scrivi la tua recensione"></textarea>
+  <br><br>
+
+  <button onclick="aggiungiRecensione()">Invia</button>
+
+  <div id="listaRecensioni"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
