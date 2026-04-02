@@ -11,27 +11,33 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>Home</title>
+  <meta charset="UTF-8">
+  <title>Leosardo Site</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body style="text-align:center; font-family: Arial;">
+  <h1>Benvenuto 👋</h1>
+  <p>Questo è il mio sito</p>
 
-  <h1>👋 Ciao!</h1>
-  <p>Benvenuto nel mio sito</p>
+  <div class="login-box">
+    <input type="text" id="username" placeholder="Username">
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+  </div>
 
-  <h2>Scegli cosa vuoi fare:</h2>
+  <p id="userDisplay"></p>
+
+  <br>
 
   <a href="calcolatrice.html">
-    <button>🧮 Vai alla Calcolatrice</button>
+    <button>Vai alla Calcolatrice</button>
   </a>
 
-  <br><br>
-
-  <a href="dev.html">
-    <button>🚧 Pagina in sviluppo</button>
-  </a>
-
+  <script src="script.js"></script>
 </body>
 </html>
